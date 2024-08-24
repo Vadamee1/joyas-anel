@@ -1,11 +1,14 @@
-import { titleFont } from "@/config/font";
-import Image from "next/image";
+import ProductGrid from "@/components/products/product-grid/ProductGrid";
+import Title from "@/components/ui/title/Title";
+import { initialData } from "@/seed/seed";
+
+const products = initialData.products;
 
 export default function Home() {
   return (
-    <main>
-      <h1>wenas</h1>
-      <h1 className={`${titleFont.className}`}>wenas</h1>
-    </main>
+    <>
+      <Title title="Todos los productos" />
+      <ProductGrid products={products} />
+    </>
   );
 }
