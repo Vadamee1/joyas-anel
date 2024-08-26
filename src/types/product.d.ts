@@ -21,4 +21,6 @@ export type ValidTypes = "shirts" | "pants" | "hoodies" | "hats";
   | "necklace"
   | "stone"
   | "craft"
-  | "spiritual"; */
+  | "spiritual"; 
+  | "amulet" 
+  | "anklet*/

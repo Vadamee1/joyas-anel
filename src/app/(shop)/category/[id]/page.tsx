@@ -9,7 +9,7 @@ interface Props {
 export default function Category({ params }: Props) {
   const { id } = params;
 
-  if (id !== "jewel") notFound();
+  if (id !== "accessories") notFound();
   return (
     <div>
       <h1>Category page</h1>

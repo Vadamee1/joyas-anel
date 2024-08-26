@@ -8,9 +8,19 @@ export const navPages = {
     name: "Cart",
     href: "/cart",
   },
-  Jewel: {
-    name: "Jeweler's",
-    href: "/category/jewel",
+  categories: {
+    accessories: {
+      name: "Accessories",
+      href: "/category/accessories",
+    },
+    spiritual: {
+      name: "Spiritual",
+      href: "/category/spiritual",
+    },
+    craft: {
+      name: "Craft",
+      href: "/category/craft",
+    },
   },
   product: {
     name: "Product",

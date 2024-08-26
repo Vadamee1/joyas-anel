@@ -5,6 +5,7 @@ import { homeTitleFont } from "@/config/font";
 import { navPages } from "@/config/site";
 import { IoCartOutline, IoSearchOutline } from "react-icons/io5";
 import { Button } from "../button";
+import Sidebar from "../sidebar/Sidebar";
 
 export default function TopMenu() {
   return (
@@ -22,9 +23,21 @@ export default function TopMenu() {
       <div className="hidden sm:block">
         <Link
           className="m-2 p-2 rounded-md transition-all hover:bg-yellow-100"
-          href={navPages.Jewel.href}
+          href={navPages.categories.accessories.href}
         >
-          {navPages.Jewel.name}
+          {navPages.categories.accessories.name}
+        </Link>
+        <Link
+          className="m-2 p-2 rounded-md transition-all hover:bg-yellow-100"
+          href={navPages.categories.craft.href}
+        >
+          {navPages.categories.craft.name}
+        </Link>
+        <Link
+          className="m-2 p-2 rounded-md transition-all hover:bg-yellow-100"
+          href={navPages.categories.spiritual.href}
+        >
+          {navPages.categories.spiritual.name}
         </Link>
       </div>
       <div className="flex items-center">
@@ -34,9 +47,7 @@ export default function TopMenu() {
         <Link href={navPages.cart.href} className="mx-2">
           <IoCartOutline className="w-6 h-6" />
         </Link>
-        <Button className="hover:bg-yellow-100" variant="ghost">
-          Menú
-        </Button>
+        <Sidebar />
       </div>
     </nav>
   );
