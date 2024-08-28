@@ -4,7 +4,6 @@ import Image from "next/image";
 import { homeTitleFont } from "@/config/font";
 import { navPages } from "@/config/site";
 import { IoCartOutline, IoSearchOutline } from "react-icons/io5";
-import { Button } from "../button";
 import Sidebar from "../sidebar/Sidebar";
 
 export default function TopMenu() {

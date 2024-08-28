@@ -1,7 +1,7 @@
-import { DM_Serif_Text, Inter, Montserrat_Alternates } from "next/font/google";
+import { DM_Serif_Text, Inter, Roboto_Slab } from "next/font/google";
 
 export const inter = Inter({ subsets: ["latin"] });
-export const titleFont = Montserrat_Alternates({
+export const titleFont = Roboto_Slab({
   subsets: ["latin"],
   weight: ["500", "700"],
 });

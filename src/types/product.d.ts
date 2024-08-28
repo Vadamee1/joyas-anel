@@ -4,7 +4,7 @@ export type Product = {
   images: string[];
   inStock: number;
   price: number;
-  tags: string[];
+  tags: ValidCategory;
   title: string;
   sizes: ValidSizes[];
   type: ValidType;
@@ -12,6 +12,7 @@ export type Product = {
 
 export type ValidSizes = "XS" | "S" | "M" | "L" | "XL" | "XXL" | "XXXL";
 export type ValidTypes = "shirts" | "pants" | "hoodies" | "hats";
+export type ValidCategory = "accessories" | "craft" | "spiritual";
 
 /* export type ValidType =
   | "ring"
