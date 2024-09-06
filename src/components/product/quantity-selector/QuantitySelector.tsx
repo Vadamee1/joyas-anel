@@ -19,7 +19,7 @@ export default function QuantitySelector({ quantity }: Props) {
   return (
     <div className="flex">
       <Button
-        className="rounded-full relative w-10 bg-yellow-300 hover:bg-yellow-200"
+        className="rounded-full relative w-10 bg-yellow-300 hover:bg-yellow-400"
         onClick={() => onQuantityChanged(-1)}
       >
         <IoRemoveCircleOutline size={30} className="absolute text-black" />
@@ -28,7 +28,7 @@ export default function QuantitySelector({ quantity }: Props) {
         {count}
       </span>
       <Button
-        className="rounded-full relative w-10 bg-yellow-300 hover:bg-yellow-200"
+        className="rounded-full relative w-10 bg-yellow-300 hover:bg-yellow-400"
         onClick={() => onQuantityChanged(1)}
       >
         <IoAddCircleOutline size={30} className="absolute text-black" />

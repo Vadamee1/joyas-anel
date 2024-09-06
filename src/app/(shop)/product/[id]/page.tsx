@@ -18,8 +18,8 @@ export default function Product({ params }: Props) {
   if (!product) notFound();
 
   return (
-    <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
-      <div className="col-span-1 md:col-span-2">
+    <div className="mt-5 mb-20 flex px-80">
+      <div className="w-1/2">
         <ProductCarousel images={product.images} title={product.title} />
       </div>
       <div className="col-span-1 px-5">
